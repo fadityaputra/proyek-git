@@ -4,7 +4,10 @@
   "description": "Halo, ini proyek pertama saya!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,12 @@
   "bugs": {
     "url": "https://github.com/fadityaputra/proyek-git/issues"
   },
-  "homepage": "https://github.com/fadityaputra/proyek-git#readme"
+  "homepage": "https://github.com/fadityaputra/proyek-git#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9"
+  }
 }
